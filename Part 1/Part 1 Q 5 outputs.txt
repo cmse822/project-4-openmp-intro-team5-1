@@ -1,0 +1,41 @@
+// Part 1 Question 5 outputs: this is showing that the Frobenius norm difference for each N 
+// across the thread counts is zero, thus we have precise computations.
+
+bash-4.2$ ./Part_1_Q_5 20
+Using 1 threads:
+Computation time: 0.000122238 seconds
+Using 2 threads:
+Computation time: 0.000101935 seconds
+Difference (Frobenius norm): 0
+Using 4 threads:
+Computation time: 0.000119887 seconds
+Difference (Frobenius norm): 0
+Using 8 threads:
+Computation time: 0.000188932 seconds
+Difference (Frobenius norm): 0
+
+bash-4.2$ ./Part_1_Q_5 100
+Using 1 threads:
+Computation time: 0.0124876 seconds
+Using 2 threads:
+Computation time: 0.00643678 seconds
+Difference (Frobenius norm): 0
+Using 4 threads:
+Computation time: 0.00335531 seconds
+Difference (Frobenius norm): 0
+Using 8 threads:
+Computation time: 0.00174665 seconds
+Difference (Frobenius norm): 0
+
+bash-4.2$ ./Part_1_Q_5 1000
+Using 1 threads:
+Computation time: 15.1741 seconds
+Using 2 threads:
+Computation time: 7.68954 seconds
+Difference (Frobenius norm): 0
+Using 4 threads:
+Computation time: 3.8803 seconds
+Difference (Frobenius norm): 0
+Using 8 threads:
+Computation time: 1.95508 seconds
+Difference (Frobenius norm): 0

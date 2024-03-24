@@ -1,0 +1,41 @@
+// Part 1 Question 3 Results:
+
+export OMP_NUM_THREADS=1
+bash-4.2$ ./Part_1_Q_3 20
+Matrix size: 20, Time taken: 0.000108734 seconds
+bash-4.2$ ./Part_1_Q_3 100
+Matrix size: 100, Time taken: 0.0124473 seconds
+bash-4.2$ ./Part_1_Q_3 1000
+Matrix size: 1000, Time taken: 15.234 seconds
+
+export OMP_NUM_THREADS=2
+bash-4.2$ ./Part_1_Q_3 20
+Matrix size: 20, Time taken: 0.000199791 seconds
+bash-4.2$ ./Part_1_Q_3 100
+Matrix size: 100, Time taken: 0.00901864 seconds
+bash-4.2$ ./Part_1_Q_3 1000
+Matrix size: 1000, Time taken: 8.3126 seconds
+
+export OMP_NUM_THREADS=3
+bash-4.2$ ./Part_1_Q_3 20
+Matrix size: 20, Time taken: 0.000337396 seconds
+bash-4.2$ ./Part_1_Q_3 100
+Matrix size: 100, Time taken: 0.00697817 seconds
+bash-4.2$ ./Part_1_Q_3 1000
+Matrix size: 1000, Time taken: 5.86437 seconds
+
+export OMP_NUM_THREADS=4
+bash-4.2$ ./Part_1_Q_3 20
+Matrix size: 20, Time taken: 0.000196386 seconds
+bash-4.2$ ./Part_1_Q_3 100
+Matrix size: 100, Time taken: 0.00333114 seconds
+bash-4.2$ ./Part_1_Q_3 1000
+Matrix size: 1000, Time taken: 4.62509 seconds
+
+export OMP_NUM_THREADS=5
+bash-4.2$ ./Part_1_Q_3 20
+Matrix size: 20, Time taken: 0.000206448 seconds
+bash-4.2$ ./Part_1_Q_3 100
+Matrix size: 100, Time taken: 0.00316833 seconds
+bash-4.2$ ./Part_1_Q_3 1000
+Matrix size: 1000, Time taken: 3.1084 seconds

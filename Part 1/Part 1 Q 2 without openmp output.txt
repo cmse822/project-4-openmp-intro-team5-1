@@ -1,0 +1,19 @@
+// Without OpenMP:
+Matrix size: 1, Time taken: 0 seconds
+Matrix size: 10, Time taken: 1.3113e-05 seconds
+Matrix size: 25, Time taken: 0.00019002 seconds
+Matrix size: 50, Time taken: 0.00146103 seconds
+Matrix size: 80, Time taken: 0.00592589 seconds
+Matrix size: 100, Time taken: 0.011704 seconds
+Matrix size: 150, Time taken: 0.0382981 seconds
+Matrix size: 200, Time taken: 0.091434 seconds
+Matrix size: 300, Time taken: 0.316908 seconds
+Matrix size: 400, Time taken: 0.818844 seconds
+Matrix size: 600, Time taken: 3.00286 seconds
+Matrix size: 1000, Time taken: 14.4603 seconds
+Matrix size: 1200, Time taken: 24.6308 seconds
+Matrix size: 1500, Time taken: 48.2817 seconds
+Matrix size: 2000, Time taken: 123.961 seconds
+Matrix size: 3000, Time taken: 513.444 seconds
+Matrix size: 4000, Time taken: 1334.11 seconds
+Matrix size: 5000, Time taken: 2788.66 seconds
