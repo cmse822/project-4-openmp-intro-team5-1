@@ -1,5 +1,16 @@
 ### Part 1
 
+```C
+for i = 1, N
+  for j = 1, N
+    for k = 1, N
+      C[i,j] += A[i,k] * B[k,j]
+```
+
+If we look at the loops separately, the **i** loop can be parallelized with openMP, as this deals with different rows of C matrix, there shouldn't be any issues. For the **j** loop can also be parallelized, but we need to be careful because there might be false-sharing issues. For the inner **k** loop, parallelizing with openmp is really not a good idea, as it can change the final result of values in the C matrix.
+
+
+
 ### Part 2
 Hello world! from process: 1, thread: 0
 Hello world! from process: 1, thread: 2
