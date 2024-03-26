@@ -3,6 +3,8 @@ Q2.
 ![Optional Alt Text](Part1/q2.png)  
 Yes, we expect the performance to be the same since both is running with 1 thread.  
 
+It is also important to note that when we use openMP with just 1 thread, it actually slightly increases the execution time as the program needs to "set up" openMP just for doing serial execution, which is unnecessary.
+
 Q3.  
 ![Optional Alt Text](Part1/q3.png)  
 We can see that when matrix size is small, parallelizing threads does not make any difference. As matrix size increases, the effect of having more threads is more apparent. This is because larger matrices offer "parts of matrix" threads to work on different parts of the computation simultaneously, leading to more efficient utilization of resources.  
