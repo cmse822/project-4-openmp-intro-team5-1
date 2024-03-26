@@ -1,10 +1,10 @@
 ### Part 1
 Q2.  
-![Optional Alt Text](Part1/q2.png)
+![Optional Alt Text](Part1/q2.png)  
 Yes, we expect the performance to be the same since both is running with 1 thread.  
 
 Q3.  
-![Optional Alt Text](Part1/q3.png)
+![Optional Alt Text](Part1/q3.png)  
 We can see that when matrix size is small, parallelizing threads does not make any difference. As matrix size increases, the effect of having more threads is more apparent. This is because larger matrices offer "parts of matrix" threads to work on different parts of the computation simultaneously, leading to more efficient utilization of resources.  
   
 Q5.  
