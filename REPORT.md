@@ -1,15 +1,12 @@
 ### Part 1
-
-```C
-for i = 1, N
-  for j = 1, N
-    for k = 1, N
-      C[i,j] += A[i,k] * B[k,j]
-```
-
-If we look at the loops separately, the **i** loop can be parallelized with openMP, as this deals with different rows of C matrix, there shouldn't be any issues. For the **j** loop can also be parallelized, but we need to be careful because there might be false-sharing issues. For the inner **k** loop, parallelizing with openmp is really not a good idea, as it can change the final result of values in the C matrix.
-
-
+2.   
+![Optional Alt Text](Part1/q2.png)  
+Yes, we expect the performance to be the same since both is running with 1 thread.  
+4.  
+![Optional Alt Text](Part1/q3.png)
+We can see that when matrix size is small, parallelizing threads does not make any difference. As matrix size increases, the effect of having more threads is more apparent. This is because larger matrices offer "parts of matrix" threads to work on different parts of the computation simultaneously, leading to more efficient utilization of resources.  
+5.  
+A detail comparison is provided at Part 1/q5output.txt. There is no difference in the matrix produced.  
 
 ### Part 2
 Hello world! from process: 1, thread: 0
